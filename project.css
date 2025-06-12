@@ -1,0 +1,9 @@
+h1 {
+    margin: 5px;
+	font-family: cursive;
+	color: white;
+	background: linear-gradient(to left, white, rgb(242, 0, 255));
+}
+ul {
+    background-color: #dfdfdf;
+}
