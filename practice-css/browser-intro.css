@@ -8,8 +8,7 @@ p.info {
 }
 
 h1 {
-	color: white;
-	text-shadow: navy;
+	background-color: #7f7fcf;
 }
 
 h2 {
@@ -33,7 +32,11 @@ div#zentai > div {
 img.src {
 	float: right;
 
-	width: 10px;
-	height: 10px;
-	margin: 10px 0 10px 10px; 
+	width: 100px;
+	height: 100px; 
+}
+
+title {
+	color: white;
+	text-shadow: navy;
 }
