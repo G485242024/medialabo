@@ -38,6 +38,9 @@ h3.No2 {
 	color: white;
 	background: linear-gradient(to left, white, red);
 }
+p.No2 {
+    background-color: #dfdfdf;
+}
 h3.No3 {
     margin: 5px;
 	font-family: cursive;
