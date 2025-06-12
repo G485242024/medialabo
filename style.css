@@ -1,4 +1,28 @@
 h1 {
     color: white;
-	text-shadow:10px 0px 10px skyblue;
+    text-shadow: 0px 0px 10px green;
+}
+
+h2.yellowgreen {
+    color: white;
+    text-shadow: 0px 0px 10px yellowgreen;
+}
+
+h2.greenyellow {
+    color: white;
+    text-shadow: 0px 0px 10px greenyellow;
+}
+h2.yellow {
+    color: black;
+    text-shadow: 0px 0px 10px yellow;
+}
+h3.No1 {
+    margin: 5px;
+	font-family: cursive;
+	color: #3f3faf;
+	background: linear-gradient(to right, white, purple);
+}
+p.No1 {
+	color: white;
+    background-color: black;
 }
