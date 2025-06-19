@@ -4,12 +4,13 @@ function print(data) {
   const shops = data.results.shop; // 店舗の配列を取得
 
   for (let shop of shops) {
-    console.log("店名:", shop.name);
-    console.log("住所:", shop.address);
-    console.log("アクセス:", shop.access);
-    console.log("予算:", shop.budget.average);
-    console.log("ジャンル:", shop.genre.name);
-    console.log("URL:", shop.urls.pc);
+    console.log("店名: ", shop.name);
+    console.log("住所: ", shop.address);
+    console.log("キャッチコピー: ", shop.catch)
+    console.log("アクセス: ", shop.access);
+    console.log("予算: ", shop.budget.average);
+    console.log("ジャンル: ", shop.genre.name);
+    console.log("URL: ", shop.urls.pc);
     console.log("------");
   }
 }
