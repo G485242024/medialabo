@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>グルメ情報表示</title>
-    <link rel="stylesheet" href="project.css">
-    <script src="gourmet.js"></script>  
-  </head>
-  <body>
-    <p>
-      <label for="kyeword">検索キーワード：</label>
-      <input type="text" id="kyeword" name="kyeword">
-      <button id="button">検索</button>
-    </p>
-    <p id="result">検索結果</p>
-        <script src="project.js"></script>  
-    <h1>グルメ情報</h1>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>グルメ情報表示</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+  <script src="gourmet.js" defer></script>
+  <link rel="stylesheet" href="project.css">
+</head>
+<body>
+  <p>
+    <label for="keyword">検索キーワード：</label>
+    <input type="text" id="keyword" name="keyword">
+    <button id="sendRequest">検索</button>
+  </p>
+  <h1>グルメ情報</h1>
+  <div id="result"></div>
+</body>
 </html>
