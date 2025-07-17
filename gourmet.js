@@ -17,8 +17,44 @@ function print(data) {
 
 // 課題5-1 の関数 printDom() はここに記述すること
 function printDom(data) {
+  var shops = data.results.shop;
 
+  var old = document.querySelector("#result");
+  if (old) {
+    old.remove();
+  }
+
+  var div = document.createElement("div");
+  div.id = "result";
+  document.body.insertAdjacentElement("beforeend", div);
+
+  for (var i = 0; i < shops.length; i++) {
+    var shop = shops[i];
+    var p = document.createElement("p");
+
+    var genre = shop.genre.name;
+    if (genre.includes("カフェ")) {
+      p.className = "cafe";
+    } else if (genre.includes("居酒屋") || genre.includes("バル")) {
+      p.className = "izakaya";
+    }
+
+    var info = "店名: " + shop.name + "\n" +
+               "住所: " + shop.address + "\n" +
+               "キャッチコピー: " + shop.catch + "\n" +
+               "アクセス: " + shop.access + "\n" +
+               "予算: " + shop.budget.average + "\n" +
+               "ジャンル: " + shop.genre.name + "\n" +
+               "サブジャンル: " + shop.sub_genre.name + "\n" +
+               "営業時間: " + shop.open + "\n" +
+               "最寄駅: " + shop.station_name + "\n" +
+               "店舗ページ: " + shop.urls.pc;
+
+    p.textContent = info;
+    div.insertAdjacentElement("beforeend", p);
+  }
 }
+
 
 // 課題6-1 のイベントハンドラ登録処理は以下に記述
 
@@ -248,5 +284,5 @@ let data = {
       }
     ]
   }
-};
+}
 
